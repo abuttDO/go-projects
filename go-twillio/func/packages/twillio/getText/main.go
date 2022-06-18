@@ -75,8 +75,7 @@ func init() {
 	})
 }
 
-func main() {
-	//msg := fmt.Sprintf(os.Getenv("MSG"), "AHMED")
-	msg := fmt.Printf("Hello! Ahmed")
+func Main() {
+	msg := fmt.Sprintf(os.Getenv("MSG"), "AHMED")
 	SendMessage(msg)
 }
