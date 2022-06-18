@@ -3,7 +3,7 @@ package main
 import (
 	"fmt"
 	"os"
-	//"github.com/joho/godotenv"
+	"github.com/joho/godotenv"
 	"github.com/twilio/twilio-go"
 	openapi "github.com/twilio/twilio-go/rest/api/v2010"
 )
@@ -25,20 +25,20 @@ func SendMessage(msg string) {
 
 	response, err := client.Api.CreateMessage(&params)
 	if err != nil {
-		fmt.Printf("error creatign and sending message: %s\n", err.Error())
+		fmt.Printf("error creatinG and sending message: %s\n", err.Error())
 		return
 	}
 	fmt.Printf("Message SID: %s\nMESSAGE SEND SUCCESSFULLY", *response.Sid)
 }
 
 func init() {
-	/*
+	
 	err := godotenv.Load(".env")
 	if err != nil{
 		fmt.Printf("error loading .env: %s\n", err.Error())
 		os.Exit(1)
 	}
-	*/
+	
 	accountSid = os.Getenv("ACCOUNT_SID")
 	authToken = os.Getenv("AUTH_TOKEN")
 	fromPhone = os.Getenv("FROM_PHONE")

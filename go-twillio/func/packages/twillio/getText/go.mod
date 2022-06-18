@@ -1,4 +1,4 @@
-module github.com/abuttDO/go-projects/go-twillio/packages/twillio/getText
+module github.com/abuttDO/go-projects/go-twillio/func/packages/twillio/getText
 
 go 1.17
 

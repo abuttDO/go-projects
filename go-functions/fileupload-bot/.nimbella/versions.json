@@ -1,0 +1,14 @@
+[
+  {
+    "apihost": "https://faas-blr1-8177d592.doserverless.co",
+    "namespace": "fn-8140a094-5ce3-4384-91a1-0261b29eaa04",
+    "packageVersions": {},
+    "actionVersions": {
+      "slack/fileupload": {
+        "digest": "cc7c13a3a9dc96024482d3dd80f91fda2b7dc8a4b62a042e8ce8c9fc7826cd40",
+        "version": "0.0.1"
+      }
+    },
+    "webHashes": {}
+  }
+]
