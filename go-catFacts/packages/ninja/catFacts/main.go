@@ -26,7 +26,7 @@ func GetJson(url string, target interface{}) error {
 }
 
 
-func GetCatFact() {
+func GetCatFact() string{
 	url := "https://catfact.ninja/fact"
 
 	var catFact CatFact
@@ -38,13 +38,19 @@ func GetCatFact() {
 		fmt.Printf("A Super interesting Cat Fact: %s\n", catFact.Fact)
 	}
 
+	return catFact.Fact
+
 }
 
-func Main() {
+func Main() map[string]interface{} {
 
 	client = &http.Client{Timeout: 10 * time.Second}
 
-	GetCatFact()
+	msg := make(map[string]interface{})
+
+	msg["body"] = GetCatFact()
+
+	return msg
 
 	// catFact := CatFact {
 	// 	Fact: "A random cat fact",
