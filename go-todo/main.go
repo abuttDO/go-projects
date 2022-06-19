@@ -25,7 +25,7 @@ func todo(w http.ResponseWriter, r *http.Request) {
 		Title: "TODO LIST",
 		Todos: []Todo{
 			{Item: "Install Go", Done: true},
-			{Item: "Learn Go", Done: false},
+			{Item: "Learn Go", Done: true},
 			{Item: "Make Todo List in Go", Done: false},
 		},
 	}
