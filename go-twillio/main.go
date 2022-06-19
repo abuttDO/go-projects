@@ -3,7 +3,7 @@ package main
 import (
 	"fmt"
 	"os"
-	"github.com/joho/godotenv"
+	//"github.com/joho/godotenv"
 	"github.com/twilio/twilio-go"
 	openapi "github.com/twilio/twilio-go/rest/api/v2010"
 )
@@ -33,11 +33,11 @@ func SendMessage(msg string) {
 
 func init() {
 	
-	err := godotenv.Load(".env")
-	if err != nil{
-		fmt.Printf("error loading .env: %s\n", err.Error())
-		os.Exit(1)
-	}
+	// err := godotenv.Load(".env")
+	// if err != nil{
+	// 	fmt.Printf("error loading .env: %s\n", err.Error())
+	// 	os.Exit(1)
+	// }
 	
 	accountSid = os.Getenv("ACCOUNT_SID")
 	authToken = os.Getenv("AUTH_TOKEN")
