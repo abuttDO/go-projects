@@ -8,6 +8,7 @@ packages:
       - name: catFacts
         main: ''
         runtime: 'go:default'
-        environment:
-          LOG_DESTINATIONS: ${LOG_DESTINATIONS}
+        environment: {}
         parameters: {}
+environment:
+  LOG_DESTINATIONS: ${LOG_DESTINATIONS}
