@@ -10,5 +10,17 @@
       }
     },
     "webHashes": {}
+  },
+  {
+    "apihost": "https://faas-blr1-8177d592.doserverless.co",
+    "namespace": "fn-703fd6a4-76d3-4c8d-9337-5c78b3ba3af9",
+    "packageVersions": {},
+    "actionVersions": {
+      "ninja/catFacts": {
+        "digest": "599693debc4d644dbfdb84c34aec0a2384d33173ec069fb5b588c105e300727d",
+        "version": "0.0.1"
+      }
+    },
+    "webHashes": {}
   }
 ]

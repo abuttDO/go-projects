@@ -1,14 +1,7 @@
-parameters: {}
-environment: {}
 packages:
   - name: ninja
-    environment: {}
-    parameters: {}
     actions:
       - name: catFacts
-        main: ''
         runtime: 'go:default'
-        environment: {}
-        parameters: {}
 environment:
   LOG_DESTINATIONS: ${LOG_DESTINATIONS}
