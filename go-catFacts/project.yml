@@ -3,5 +3,7 @@ packages:
     actions:
       - name: catFacts
         runtime: 'go:default'
+        limits:
+          timeout: 600000
 environment:
   LOG_DESTINATIONS: ${LOG_DESTINATIONS}
