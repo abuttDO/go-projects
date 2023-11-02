@@ -1,6 +1,6 @@
 packages:
   - name: ninja
-    actions:
+    functions:
       - name: catFacts
         runtime: 'go:default'
         limits:
